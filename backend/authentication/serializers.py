@@ -30,7 +30,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         return user
 
 
-class FoodBridgeTokenSerializer(TokenObtainPairSerializer):
+class SharePlateTokenSerializer(TokenObtainPairSerializer):
     username_field = "email"
 
     @classmethod

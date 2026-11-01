@@ -1,6 +1,7 @@
-# FoodBridge Backend
+# SharePlate Backend
 
-FoodBridge is a Django REST API.
+SharePlate is a Django REST API that connects food donors with NGOs to help
+redistribute surplus food.
 
 ## Run locally on macOS
 
@@ -37,4 +38,4 @@ From the `backend` directory, run:
 ```sh
 env USE_SQLITE_DEV=1 USE_INMEMORY_CHANNELS=1 CELERY_TASK_ALWAYS_EAGER=1 python manage.py test test_api
 ```
-# FoodBridge
+# SharePlate

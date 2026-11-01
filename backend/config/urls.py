@@ -6,7 +6,7 @@ from django.urls import include, path
 def api_root(request):
     return JsonResponse(
         {
-            "service": "FoodBridge API",
+            "service": "SharePlate API",
             "endpoints": {
                 "GET /api/auth/": "List authentication endpoints",
                 "POST /api/auth/register/": "Create an account",

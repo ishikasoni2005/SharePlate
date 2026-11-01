@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.views import TokenObtainPairView
 
-from .serializers import FoodBridgeTokenSerializer
+from .serializers import SharePlateTokenSerializer
 from .services import get_user_payload, register_user
 
 
@@ -16,10 +16,9 @@ class RegisterView(APIView):
 
 class LoginView(TokenObtainPairView):
     permission_classes = [permissions.AllowAny]
-    serializer_class = FoodBridgeTokenSerializer
+    serializer_class = SharePlateTokenSerializer
 
 
 class MeView(APIView):
     def get(self, request):
         return Response(get_user_payload(request.user))
-

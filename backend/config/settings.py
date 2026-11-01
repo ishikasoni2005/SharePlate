@@ -62,9 +62,9 @@ TEMPLATES = [
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("DB_NAME", os.getenv("POSTGRES_DB", "foodbridge")),
-        "USER": os.getenv("DB_USER", os.getenv("POSTGRES_USER", "foodbridge")),
-        "PASSWORD": os.getenv("DB_PASSWORD", os.getenv("POSTGRES_PASSWORD", "foodbridge")),
+        "NAME": os.getenv("DB_NAME", os.getenv("POSTGRES_DB", "shareplate")),
+        "USER": os.getenv("DB_USER", os.getenv("POSTGRES_USER", "shareplate")),
+        "PASSWORD": os.getenv("DB_PASSWORD", os.getenv("POSTGRES_PASSWORD", "shareplate")),
         "HOST": os.getenv("DB_HOST", "localhost"),
         "PORT": os.getenv("DB_PORT", "5432"),
     }
@@ -121,7 +121,7 @@ CACHES = {
 if os.getenv("USE_SQLITE_DEV", "0") == "1":
     CACHES["default"] = {
         "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
-        "LOCATION": "foodbridge-dev-cache",
+        "LOCATION": "shareplate-dev-cache",
     }
 
 CHANNEL_LAYERS = {

@@ -8,7 +8,7 @@ from .views import LoginView, MeView, RegisterView
 def auth_root(request):
     return JsonResponse(
         {
-            "service": "FoodBridge authentication API",
+            "service": "SharePlate authentication API",
             "endpoints": {
                 "POST /api/auth/register/": "Create an account",
                 "POST /api/auth/login/": "Get access and refresh tokens",

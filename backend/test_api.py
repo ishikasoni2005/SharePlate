@@ -17,7 +17,7 @@ from ngo.models import NGO
 from notifications.models import Notification
 
 
-class FoodBridgeApiTests(APITestCase):
+class SharePlateApiTests(APITestCase):
     def make_user(self, email, password, first_name, last_name, role):
         user = get_user_model()(
             email=email,
